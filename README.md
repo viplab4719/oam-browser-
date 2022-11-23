@@ -37,7 +37,7 @@ yarn install
 yarn start
 ```
 
-你應在你的網站上看到 `http://localhost:3000`的畫面。
+應在你的網站上看到 `http://localhost:3000`的畫面。
 
 但是，要取得所有功能，你還需要將其指向正在運行的 [Catalog API](https://github.com/hotosm/oam-catalog)。在默認情況下，將使用 API 暫存預設的端點，但是可以在 `src/config/local.js` 中將端點更改為本主機運行的API。
 
