@@ -31,7 +31,7 @@ yarn --version
 ```
 ![tempsnip](https://user-images.githubusercontent.com/8043151/203461780-73b10d9a-2631-4adf-ac1a-298ff1c09b0c.png)
 
-
+最後步驟
 ```bash
 yarn install
 yarn start
