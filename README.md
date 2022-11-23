@@ -10,18 +10,39 @@ OAM 建立在Built on top of the [Open Imagery Network](https://openimagerynetwo
 [Create React App](https://github.com/facebookincubator/create-react-app) 用於搭建、編譯和構建項目。
 
 因此，您首先需要在系統上安裝最新版本的 Node 和 Yarn。然後，在項目的根目錄下，運行；
+
+安裝Linux支持的Node版本:
+在此安裝的是Node.js 8
+```bash
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install nodejs
+```
+
+安裝最新版Yarn:
+```bash
+sudo apt update 
+sudo apt install curl 
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -  
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list  
+sudo apt install yarn  
+yarn --version  
+```
+![tempsnip](https://user-images.githubusercontent.com/8043151/203461780-73b10d9a-2631-4adf-ac1a-298ff1c09b0c.png)
+
+
 ```bash
 yarn install
 yarn start
 ```
 
-你應在你的網站上看到 `http://localhost:3000`
+你應在你的網站上看到 `http://localhost:3000`的畫面。
 
 但是，要取得所有功能，你還需要將其指向正在運行的 [Catalog API](https://github.com/hotosm/oam-catalog)。在默認情況下，將使用 API 暫存預設的端點，但是可以在 `src/config/local.js` 中將端點更改為本主機運行的API。
 
 ## Deployment
 
-這是一個 Single Page Application，只需要一個網頁伺服器來提供服務。因此它可以託管(?)在 S3 上，也可以僅作為 Nginx 下的文件夾。
+這是一個 Single Page Application，只需要一個網頁伺服器來提供服務。因此它可以託管在 S3 上，也可以僅作為 Nginx 下的文件夾。
 
 後端API URI可以在`src/config.js`中更改
 
