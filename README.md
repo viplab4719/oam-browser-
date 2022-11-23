@@ -12,6 +12,7 @@ OAM 建立在Built on top of the [Open Imagery Network](https://openimagerynetwo
 因此，您首先需要在系統上安裝最新版本的 Node 和 Yarn。然後，在項目的根目錄下，運行；
 
 安裝Linux支持的Node版本:
+
 在此安裝的是Node.js 8
 ```bash
 sudo apt install curl
